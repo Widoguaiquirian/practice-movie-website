@@ -1,0 +1,415 @@
+body,
+button,
+input,
+textarea {
+  color: black;
+  font-family: "asap", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+body {
+  background-color: #ededed;
+  margin: 0;
+  font-family: "asap", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header,
+footer {
+  background-color: rgb(29, 29, 29);
+}
+
+.sidebar-right {
+  /* background-color: blue; */
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  color: red;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 1120px) {
+  /*CUANDO LA PANTALLA ES MAS GRANDE QUE 1120PX*/
+  .content-area {
+    display: flex;
+  }
+
+  .sidebar-right {
+    flex: 0 0 320px;
+  }
+}
+
+/*--------------------------------------------------
+        START THE HEADER STYLES 
+--------------------------------------------------*/
+
+.site-header {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.site-description {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.main-menu {
+  padding: 1em 1em;
+  color: black;
+  background-color: yellow;
+}
+
+@media screen and (min-width: 1120px) {
+  .site-title {
+    font-size: 4em;
+  }
+  .site-description {
+    font-size: 2em;
+  }
+}
+
+/*--------------------------------------------------
+        END THE HEADER STYLES 
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+        START THE POSTS STYLES
+--------------------------------------------------*/
+.main-content-area {
+  padding: 2em;
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.post a {
+  color: black;
+  text-decoration: none;
+}
+
+.post-content {
+  padding: 0 40px 20px;
+}
+
+.post-content h2 {
+  font-size: 1.5em;
+  background-color: rgb(255, 255, 134);
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 -40px 30px;
+}
+
+@media screen and (min-width: 810px) {
+  /*-CUANDO SEA MAYOR A 810PX-*/
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post {
+    flex-basis: 49%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%;
+  }
+
+  .post-half {
+    flex-basis: 49%;
+  }
+
+  .post-full {
+    flex-basis: 100%;
+  }
+}
+/*--------------------------------------------------
+        END THE POSTS STYLES
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+            START WATCH SECTION STYLES
+--------------------------------------------------*/
+.section-header {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+}
+
+.watch-card {
+  margin: 1em 0;
+}
+
+.watch-content {
+  background-color: black;
+  color: white;
+  padding: 3em;
+}
+
+.watch-content h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.movie-info {
+  font-weight: bold;
+}
+
+.movie-info span {
+  padding-right: 1.5em;
+}
+
+.movie-story {
+  margin: 1em 0;
+  letter-spacing: 1px;
+}
+
+.watch-content a {
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 810px) {
+  .watch-card {
+    display: flex;
+  }
+
+  .watch-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img-right {
+    order: 2;
+  }
+}
+/*--------------------------------------------------
+            END WATCH SECTION STYLES
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+            START DOWNLOAD NOW SECTION
+--------------------------------------------------*/
+
+.download-now {
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+}
+
+.download-now h2 {
+  margin: 10px 0;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-section a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2em;
+}
+
+.descargar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+}
+
+.production {
+  background-color: white;
+  color: black;
+  padding-bottom: 1em;
+}
+
+.genero {
+  display: flex;
+  align-items: center;
+}
+
+.cast {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production h4 {
+  flex-basis: 20%;
+  margin-left: 3em;
+}
+
+.cast img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.rating {
+  color: black;
+  background-color: rgb(255, 255, 134);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.rating .rate {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 810px) {
+  .last-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .last-section .descargar,
+  .last-section .cast {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .last-section .production {
+    flex-grow: 2;
+  }
+}
+
+/*--------------------------------------------------
+            END DOWNLOAD NOW SECTION
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+        START SECTION GALLERY STYLES
+--------------------------------------------------*/
+
+.gallery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+}
+
+.gallery-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px;
+}
+
+.gallery-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img:nth-child(4n + 1) {
+  /* esto significa que vamos a seleccionar de a 4 elementos partiendo desde el 1
+    */
+  flex-basis: 250px;
+}
+.gallery-img:nth-child(4n + 2) {
+  /* esto significa que vamos a seleccionar de a 4 elementos partiendo desde el 2
+    */
+  flex-basis: 325px;
+}
+.gallery-img:nth-child(4n + 3) {
+  flex-basis: 180px;
+}
+.gallery-img:nth-child(4n + 4) {
+  flex-basis: 380px;
+}
+/*--------------------------------------------------
+       END SECTION GALLERY STYLES
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+       START SIDEBAR STYLES
+--------------------------------------------------*/
+
+.sidebar-right {
+  padding: 2em;
+  color: black;
+}
+
+.widget {
+  margin-bottom: 2em;
+}
+
+.widget-content {
+  padding: 0.5em 2em;
+  background-color: white;
+  margin: 2em 0;
+}
+
+.widget-content ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.widget-content ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+  .widget {
+    display: flex;
+    flex-basis: 48.8%;
+    justify-content: space-between;
+  }
+
+  .widget h3 {
+    text-align: center;
+    display: flex;
+    height: 25%;
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/*--------------------------------------------------
+        END SIDEBAR STYLES
+--------------------------------------------------*/ ;
